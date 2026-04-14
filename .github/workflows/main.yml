@@ -1,0 +1,12 @@
+name: CI - Build y Test
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout de código
+        uses: actions/checkout@v4
+
+      - name: Saludo de verificación
+        run: echo "¡El sistema de integración funciona correctamente para el grupo de Anthony!"
